@@ -247,7 +247,7 @@ st.markdown(f"""
     <div style="background-color:#f0f2f6; padding:16px; border-radius:8px; margin-bottom:16px;">
         <h4 style="color:#2b7cff;">Linear Regression Evaluation</h4>
         <ul style="font-size:16px; color:#222;">
-            <li><b>R² Score:</b> {r2_score:.4f}</li>
+            <li><b>R² Score:</b> {r2:.4f}</li>
             <li><b>Mean Squared Error (MSE):</b> {mse:.4f}</li>
             <li><b>Mean Absolute Error (MAE):</b> {mae:.4f}</li>
         </ul>
