@@ -108,7 +108,7 @@ st.markdown('<div class="text">This application automatically analyzes the **mar
             'sourced from ABC Manufacturing’s customer data, to support strategic decision-making.</div>', unsafe_allow_html=True)
 
 # Read data from GitHub or local file
-data_url = "https://raw.githubusercontent.com/username/p7-customer-analysis/main/marketing_campaign.csv"
+data_url = "https://raw.githubusercontent.com/AuroraEvan/Streamlitdemo.github.io/refs/heads/main/marketing_campaign.csv"
 try:
     data = pd.read_csv(data_url, sep='\t')
 except Exception as e:
