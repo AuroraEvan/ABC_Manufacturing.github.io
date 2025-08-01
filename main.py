@@ -97,7 +97,7 @@ data_url = "https://raw.githubusercontent.com/AuroraEvan/Streamlitdemo.github.io
 try:
     data = pd.read_csv(data_url, sep='\t')
 except Exception as e:
-    st.error(f"Failed to load data from URL: {str(e}}. Using local file as fallback.")
+    st.error(f"Failed to load data from URL: {str(e)}. Using local file as fallback.")
     data = pd.read_csv("marketing_campaign.csv", sep='\t')  # Fallback to local file
 
 st.markdown('<div class="text">**Data Dimensions:**</div>', unsafe_allow_html=True)
