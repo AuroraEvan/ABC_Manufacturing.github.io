@@ -1,6 +1,7 @@
 # Streamlit App: Customer Analysis and Marketing Campaign Optimization (P7)
 import streamlit as st
 import pandas as pd
+import sklearn
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.model_selection import train_test_split
@@ -8,7 +9,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, silhouette_score
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
 # App title
 st.title("Customer Analysis and Marketing Campaign Optimization (P7)")
 
