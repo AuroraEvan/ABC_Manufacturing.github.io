@@ -277,6 +277,11 @@ st.write("Coefficients:", lr_model.coef_)
 # Step 6: Model Evaluation and LO4 (M4): Justified Recommendations
 st.markdown('<div class="header">Step 6: Model Evaluation</div>', unsafe_allow_html=True)
 
+r2 = r2_score(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+st.markdown('<div class="text">**Linear Regression Evaluation:**</div>', unsafe_allow_html=True)
+
 st.markdown(f"""
     <div style="background-color:#f0f2f6; padding:16px; border-radius:8px; margin-bottom:16px;">
         <h4 style="color:#2b7cff;">Linear Regression Evaluation</h4>
@@ -288,10 +293,6 @@ st.markdown(f"""
     </div>
 """, unsafe_allow_html=True)
 
-r2 = r2_score(y_test, y_pred)
-mse = mean_squared_error(y_test, y_pred)
-mae = mean_absolute_error(y_test, y_pred)
-st.markdown('<div class="text">**Linear Regression Evaluation:**</div>', unsafe_allow_html=True)
 st.write(f"R² Score: {r2:.4f}")
 st.write(f"Mean Squared Error (MSE): {mse:.4f}")
 st.write(f"Mean Absolute Error (MAE): {mae:.4f}")
