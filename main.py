@@ -280,7 +280,6 @@ st.markdown('<div class="header">Step 6: Model Evaluation</div>', unsafe_allow_h
 r2 = r2_score(y_test, y_pred)
 mse = mean_squared_error(y_test, y_pred)
 mae = mean_absolute_error(y_test, y_pred)
-st.markdown('<div class="text">**Linear Regression Evaluation:**</div>', unsafe_allow_html=True)
 
 st.markdown(f"""
     <div style="background-color:#f0f2f6; padding:16px; border-radius:8px; margin-bottom:16px;">
