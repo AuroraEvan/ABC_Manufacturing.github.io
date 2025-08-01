@@ -16,65 +16,99 @@ import streamlit as st
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    html, body, .stApp {
+        font-family: 'Inter', sans-serif;
+        background-color: #f0f4f8;
+        color: #1f2937;
+    }
+
     .main {
-        background-color: #f9fafb;
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .stApp {
         background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+        margin: 20px auto;
+        max-width: 95%;
     }
+
     .title {
-        color: #164e63;
+        color: #0f172a;
         font-size: 36px;
-        font-weight: bold;
+        font-weight: 700;
         text-align: center;
-        padding: 15px;
-        background-color: #cffafe;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #e0f2fe;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
+
     .header {
-        color: #1e293b;
+        color: #1d4ed8;
         font-size: 24px;
-        font-weight: bold;
-        margin-top: 25px;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 5px;
+        font-weight: 600;
+        margin-top: 35px;
+        border-bottom: 2px solid #cbd5e1;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
     }
+
     .text {
         color: #374151;
         font-size: 16px;
-        line-height: 1.8;
-        margin-bottom: 15px;
+        line-height: 1.7;
+        margin-bottom: 18px;
     }
+
     .stButton>button {
-        background-color: #164e63;
-        color: white;
-        border-radius: 8px;
-        padding: 12px 25px;
-        font-size: 16px;
+        background-color: #2563eb;
+        color: #ffffff;
         border: none;
-        transition: all 0.3s ease;
+        border-radius: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
     .stButton>button:hover {
-        background-color: #1e3a8a;
+        background-color: #1e40af;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     }
+
     .stDataFrame {
-        border: 2px solid #e5e7eb;
-        border-radius: 8px;
-        padding: 15px;
-        background-color: #f9fafb;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
+
     .chart-container {
         border: 1px solid #e5e7eb;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 20px;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 30px;
         background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h4 {
+        color: #1d4ed8;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 6px;
     }
     </style>
     """,
