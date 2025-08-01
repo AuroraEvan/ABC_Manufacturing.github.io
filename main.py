@@ -1,6 +1,6 @@
 # Streamlit App: Customer Analysis and Marketing Campaign Optimization (P7)
 import streamlit as st
-
+import pandas as pd
 
 # App title
 st.title("Customer Analysis and Marketing Campaign Optimization (P7)")
