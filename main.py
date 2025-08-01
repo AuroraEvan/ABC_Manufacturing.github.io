@@ -93,7 +93,7 @@ st.markdown('<div class="text">Automatically loading **marketing_campaign.csv** 
 
 # Use raw URL from GitHub (Public repository) or local file
 # Replace with your raw URL: e.g., https://raw.githubusercontent.com/username/p7-customer-analysis/main/marketing_campaign.csv
-data_url = "https://raw.githubusercontent.com/username/p7-customer-analysis/main/marketing_campaign.csv"
+data_url = "https://raw.githubusercontent.com/AuroraEvan/Streamlitdemo.github.io/refs/heads/main/marketing_campaign.csv"
 try:
     data = pd.read_csv(data_url, sep='\t')
 except Exception as e:
