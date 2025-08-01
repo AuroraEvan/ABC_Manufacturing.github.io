@@ -1,4 +1,4 @@
-i# Streamlit App: Customer Analysis and Marketing Campaign Optimization (P7)
+# Streamlit App: Customer Analysis and Marketing Campaign Optimization (P7)
 
 # Import libraries
 import pandas as pd
