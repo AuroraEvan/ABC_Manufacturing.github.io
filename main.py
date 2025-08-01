@@ -1,5 +1,5 @@
 # Streamlit App: Customer Analysis and Marketing Campaign Optimization (P7)
-
+import streamlit as st
 
 
 # App title
